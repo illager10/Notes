@@ -1,0 +1,74 @@
+<div class="form-container">
+    <form #noteForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="field">
+            <label class="label">
+                Title 
+            </label>
+            <div class="control">
+                <input type="text" name="title" pattern="^(?! +$)[а-яА-Яa-zA-Z0-9\s]+$" [(ngModel)]="reminderDetails.title" required class="input">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label class="label">
+                Description
+            </label>
+            <div class="control">
+                <textarea class="textarea" name="description" [(ngModel)]="reminderDetails.description"></textarea>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="tags-selector">
+            <label class="label">
+                Tags
+            </label>
+            <div class="check-group">
+                <label class="checkbox" *ngFor="let tag of tags" class="checkbox">
+                    <input id={{tag.id}} class="checkbox__input" type="checkbox"  *ngIf="isChecked(tag); else elseBlock" checked=""> 
+                    <ng-template #elseBlock>
+                        <input id={{tag.id}} class="checkbox__input" type="checkbox" > 
+                    </ng-template>
+                    <svg class="checkbox__icon" viewBox="0 0 22 22">
+                        <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                        <path class="tick" stroke="#37c7f2" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+                    </svg>              
+                  <span class="checkbox__label" [style.background-color]="tag.color">{{tag.title}}</span>
+                </label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="datetime-selector">
+            <label class="label">
+                    Date and Time
+            </label>
+            
+            <input id="calendar" 
+                   type="datetime-local" 
+                   value = {{str}}
+                   (change)="dateCheck()"
+                   min="2000-01-01T01:01">
+        </div>
+
+        <br>
+
+        <div class="field is-grouped is-pulled-right">
+            <div class="control">
+                <button class="button is-text" type="button" (click)="Cancel()">
+                    Cancel
+                </button>
+            </div>
+            <div class="control">
+                <button class="button is-success"  [disabled]="!noteForm.valid || !isDate" type="submit">
+                    Save
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>

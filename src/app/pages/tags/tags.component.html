@@ -1,0 +1,26 @@
+<div class="main-container">
+
+    <div class="search-bar-container">
+        <div class="field">
+            <p class="control has-icons-left">
+                <input class="input is-rounded" type="text" #input (keyup)=filter(input.value) placeholder="Search For">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <span class="loader" *ngIf="isLoading"></span>
+
+    <div class="tags-list" [@listAnim]>
+        <app-tag-card *ngFor="let tag of filteredTags;"
+            color="{{tag.color}}"
+            title="{{tag.title}}" tagId="{{tag.id}}"
+            (delete)="deleteTag(tag)" [@itemAnim]></app-tag-card>
+    </div>
+    
+    <button class="button floating-add-button is-primary" (click)="Add()">
+        + Add New Tag
+    </button>
+</div>

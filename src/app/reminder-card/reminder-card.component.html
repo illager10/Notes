@@ -1,0 +1,32 @@
+<div #container class="reminder-card-container">
+    <div class="clickable-area" [routerLink]="['id', reminderId]">
+        <div class="reminder-card-content">
+            <h1 class="reminder-card-title">
+                {{title}}
+            </h1>
+            <div #bodyText class="reminder-card-body">
+                <p #noteP>
+                    {{body}}                    
+                </p>
+
+                <div #truncator class="fade-out-truncation"></div>
+            </div>
+        </div>
+
+        <div class="reminder-card-datetime">
+                <p>
+                    {{date | date: 'y.MM.dd &nbsp;[HH:mm]'}}
+                </p>
+        </div>
+    </div>
+    
+    <div class="reminder-card-tags">            
+        <span *ngFor = "let tag of selectedTags" [style.background-color]="tag.color" (click)="findTag(tag.title)">
+            <p>
+                {{tag.title}}
+            </p>
+        </span>
+    </div>
+
+    <div class="delete-button" (click)="deleteReminder(reminderId)"></div>
+</div>

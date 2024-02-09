@@ -1,0 +1,84 @@
+<div class="main-container">
+        <div class="search-bar-container">
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input is-rounded" type="text" #input (keyup)=filter(input.value) placeholder="Search For">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="check-group">
+            <span class="find_label">Filter:</span>
+
+            <label class="checkbox" >
+                <input class="checkbox__input" type="checkbox" id="findTitle" (change)="filter(input.value)"> 
+                <svg class="checkbox__icon" viewBox="0 0 22 22">
+                    <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                    <path class="tick" stroke="#a59ad7" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+                </svg>
+                <span class="checkbox__label">Title</span>
+            </label>
+            
+            <label class="checkbox" >
+                <input class="checkbox__input" type="checkbox" id="findDesc" (change)="filter(input.value)"> 
+                <svg class="checkbox__icon" viewBox="0 0 22 22">
+                    <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                    <path class="tick" stroke="#a59ad7" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+                </svg>
+                <span class="checkbox__label">Description</span>
+            </label>
+
+            <label class="checkbox" >
+                <input class="checkbox__input" type="checkbox" id="findTags" (change)="filter(input.value)"> 
+                <svg class="checkbox__icon" viewBox="0 0 22 22">
+                    <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                    <path class="tick" stroke="#a59ad7" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+                </svg>
+                <span class="checkbox__label">Tags</span>
+            </label>
+        </div>
+
+        <span class="loader" *ngIf="isLoading"></span>
+
+        <div class="notes-list" [@listAnim]>
+                <app-note-card *ngFor = "let note of filteredNotes;" 
+                    title="{{note.title}}"
+                    body="{{note.description}}"
+                    noteId="{{note.id}}"
+                    (deleteNoteId)="deleteNote($event)"
+                    (findTag)="findTag($event, input)"
+                    (remindNote)="openRemindNote($event)" [@itemAnim]></app-note-card>
+        </div>
+        
+        <button class="button floating-add-button is-primary" (click)="Add()">
+            + Add New Note
+        </button>
+</div>
+
+<div class="remind-block" *ngIf="isRemind">
+    <div class="remind-items">
+        <h1 class="note-card-title" id="remindTitle">
+            Remind
+        </h1>
+        <label class="label-date">
+                Date and Time
+        </label>
+        <input id="calendar" (change)="dateCheck()" type="datetime-local" min="2000-01-01T01:01">
+
+        <div class="remButtons is-grouped is-pulled-right">
+            <div class="control">
+                <button class="button is-text" type="button" (click)="cancel()">
+                    Cancel
+                </button>
+            </div>
+            <div class="control">
+                <button class="button is-success" [disabled]="!isDate" type="submit" (click)="save()">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend:
+    image: illager/notes_backend:latest
+    ports:
+      - "7072:80"
+    networks:
+      - my-network
+
+  frontend:
+    image: illager/notes_frontend:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - my-network
+
+networks:
+  my-network:

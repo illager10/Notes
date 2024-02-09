@@ -1,0 +1,25 @@
+<div #container class="note-card-container">
+    <div class="note-card-content" [routerLink]="['id', noteId]">
+        <h1 class="note-card-title">
+            {{title}}
+        </h1>
+        <div #bodyText class="note-card-body">
+            <p #noteP>
+            {{body}}
+            </p>
+
+            <div #truncator class="fade-out-truncation"></div>
+        </div>
+    </div>
+
+    <div #tagsList class="note-card-tags">            
+        <span #tagsText *ngFor = "let tag of selectedTags" [style.background-color]="tag.color" (click)="findTag(tag.title)">
+            {{tag.title}}
+        </span>
+    </div>
+
+    <div class="interactive-buttons">
+        <div class="remind-button" (click)="remindNote(noteId)"></div>
+        <div class="delete-button" (click)="deleteNote(noteId)"></div>
+    </div>
+</div>

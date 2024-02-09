@@ -1,0 +1,7 @@
+**/node_modules/
+**/.git
+**/README.node_modules
+**/API/
+**/.editorconfig
+**/.aws
+**/dist

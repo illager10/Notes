@@ -1,0 +1,35 @@
+<div class="form-container">
+    <form #tagForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="field">
+            <label class="label">Title</label>
+            <div class="control">
+                <input type="text" name="title" [(ngModel)]="tagDetails.title" pattern="^(?! +$)[а-яА-Яa-zA-Z0-9\s]+$" required class="input">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label class="label">Color</label>
+            <div class="control">
+                <input id="colorField" type="color" value="{{tagDetails.color}}">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field is-grouped is-pulled-right">
+            <div class="control">
+                <button class="button is-text" type="button" (click)="Cancel()">
+                    Cancel
+                </button>
+            </div>
+            <div class="control">
+                <button class="button is-success" [disabled]="!tagForm.valid" type="submit">
+                    Save
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,63 @@
+<div class="main-container">
+
+    <div class="search-bar-container">
+        <div class="field">
+            <p class="control has-icons-left">
+                <input class="input is-rounded" type="text" #input (keyup)=filter(input.value) placeholder="Search For">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    
+    <div class="check-group">
+        <span class="find_label">Filter:</span>
+
+        <label class="checkbox" >
+            <input class="checkbox__input" type="checkbox" id="findTitle"> 
+            <svg class="checkbox__icon" viewBox="0 0 22 22">
+                <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                <path class="tick" stroke="#a59ad7" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+            </svg>
+            <span class="checkbox__label">Title</span>
+        </label>
+        
+        <label class="checkbox" >
+            <input class="checkbox__input" type="checkbox" id="findDesc"> 
+            <svg class="checkbox__icon" viewBox="0 0 22 22">
+                <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                <path class="tick" stroke="#a59ad7" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+            </svg>
+            <span class="checkbox__label">Description</span>
+        </label>
+
+        <label class="checkbox" >
+            <input class="checkbox__input" type="checkbox" id="findTags"> 
+            <svg class="checkbox__icon" viewBox="0 0 22 22">
+                <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="black" rx="3" />
+                <path class="tick" stroke="#a59ad7" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+            </svg>
+            <span class="checkbox__label">Tags</span>
+        </label>
+    </div>
+
+    <span class="loader" *ngIf="isLoading"></span>
+
+    <div class="reminders-list" [@listAnim]>
+        <app-reminder-card 
+            *ngFor="let reminder of filteredReminders"
+            title = "{{reminder.title}}"
+            body = "{{reminder.description}}"
+            reminderId = "{{reminder.id}}"
+            date = "{{reminder.date}}"
+            (delete)="deleteReminder($event)"
+            (findTag)="findTag($event, input)"
+            [@itemAnim]
+        ></app-reminder-card>
+    </div>
+    
+    <button class="button floating-add-button is-primary" (click)="Add()">
+        + Add New Reminder
+    </button>
+</div>

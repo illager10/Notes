@@ -6,8 +6,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7072:80"
-    networks:
-      - my-network
 
   frontend:
     build:
@@ -17,8 +15,6 @@ services:
       - "80:80"
     depends_on:
       - backend
-    networks:
-      - my-network
 
 networks:
   my-network:

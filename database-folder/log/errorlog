@@ -1,0 +1,150 @@
+2024-03-10 02:48:28.72 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:28.73 Server      UTC adjustment: 0:00
+2024-03-10 02:48:28.73 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:28.73 Server      All rights reserved.
+2024-03-10 02:48:28.73 Server      Server process ID is 424.
+2024-03-10 02:48:28.73 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:28.73 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:28.73 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:28.73 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:48:31.57 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:31.57 Server      UTC adjustment: 0:00
+2024-03-10 02:48:31.57 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:31.57 Server      All rights reserved.
+2024-03-10 02:48:31.57 Server      Server process ID is 424.
+2024-03-10 02:48:31.57 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:31.58 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:31.58 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:31.58 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:48:34.52 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:34.52 Server      UTC adjustment: 0:00
+2024-03-10 02:48:34.52 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:34.52 Server      All rights reserved.
+2024-03-10 02:48:34.52 Server      Server process ID is 420.
+2024-03-10 02:48:34.52 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:34.52 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:34.52 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:34.52 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:48:37.79 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:37.79 Server      UTC adjustment: 0:00
+2024-03-10 02:48:37.79 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:37.80 Server      All rights reserved.
+2024-03-10 02:48:37.80 Server      Server process ID is 420.
+2024-03-10 02:48:37.80 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:37.80 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:37.80 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:37.80 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:48:41.36 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:41.37 Server      UTC adjustment: 0:00
+2024-03-10 02:48:41.37 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:41.37 Server      All rights reserved.
+2024-03-10 02:48:41.37 Server      Server process ID is 424.
+2024-03-10 02:48:41.37 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:41.37 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:41.37 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:41.37 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:48:46.07 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:46.07 Server      UTC adjustment: 0:00
+2024-03-10 02:48:46.07 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:46.07 Server      All rights reserved.
+2024-03-10 02:48:46.07 Server      Server process ID is 420.
+2024-03-10 02:48:46.07 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:46.07 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:46.08 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:46.08 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:48:51.99 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:48:51.99 Server      UTC adjustment: 0:00
+2024-03-10 02:48:52.00 Server      (c) Microsoft Corporation.
+2024-03-10 02:48:52.00 Server      All rights reserved.
+2024-03-10 02:48:52.00 Server      Server process ID is 424.
+2024-03-10 02:48:52.00 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:48:52.00 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:48:52.00 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:48:52.00 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:49:01.26 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:49:01.26 Server      UTC adjustment: 0:00
+2024-03-10 02:49:01.26 Server      (c) Microsoft Corporation.
+2024-03-10 02:49:01.26 Server      All rights reserved.
+2024-03-10 02:49:01.26 Server      Server process ID is 420.
+2024-03-10 02:49:01.27 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:49:01.27 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:49:01.27 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:49:01.27 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:49:18.14 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:49:18.14 Server      UTC adjustment: 0:00
+2024-03-10 02:49:18.14 Server      (c) Microsoft Corporation.
+2024-03-10 02:49:18.14 Server      All rights reserved.
+2024-03-10 02:49:18.14 Server      Server process ID is 424.
+2024-03-10 02:49:18.14 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:49:18.14 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:49:18.15 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:49:18.15 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.
+2024-03-10 02:49:46.46 Server      Microsoft SQL Server 2022 (RTM-CU11) (KB5032679) - 16.0.4105.2 (X64) 
+	Nov 14 2023 18:33:19 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.3 LTS) <X64>
+2024-03-10 02:49:46.46 Server      UTC adjustment: 0:00
+2024-03-10 02:49:46.46 Server      (c) Microsoft Corporation.
+2024-03-10 02:49:46.46 Server      All rights reserved.
+2024-03-10 02:49:46.46 Server      Server process ID is 424.
+2024-03-10 02:49:46.46 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-03-10 02:49:46.46 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-03-10 02:49:46.46 Server      Error: 17113, Severity: 16, State: 1.
+2024-03-10 02:49:46.46 Server      Error 87(The parameter is incorrect.) occurred while opening file '/var/opt/mssql/data/master.mdf' to obtain configuration information at startup. An invalid startup option might have caused the error. Verify your startup options, and correct or remove them if necessary.

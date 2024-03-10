@@ -5,8 +5,8 @@ using Web_API.Models;
 
 namespace Web_API.Controllers
 {
-  [ApiController]
-  [Route("api/[controller]")]
+    [ApiController]
+    [Route("api/[controller]")]
     public class TagsController : Controller
     {
         private readonly FullStackDbContext _fullStackDbContext;

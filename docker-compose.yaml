@@ -1,20 +1,41 @@
-version: '3'
+version: '3.8'
 services:
+  db:
+    image: mcr.microsoft.com/mssql/server
+    container_name: database
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${DB_PSSWD}
+      - MSQSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes: 
+      - ./database-folder/data:/var/opt/mssql/data
+      - ./database-folder/log:/var/opt/mssql/log
+      - ./database-folder/secrets:/var/opt/mssql/secrets
+    user: root
+
   backend:
     build:
       context: ./API/Web-API/Web-API/
       dockerfile: Dockerfile
+    container_name: backend
     ports:
       - "7072:80"
+    depends_on:
+      - db
 
   frontend:
     build:
       context: ./
       dockerfile: Dockerfile
+    container_name: frontend
     ports:
       - "80:80"
     depends_on:
       - backend
+      
+# volumes:
+#   sql-data-folder:
 
-networks:
-  my-network:
+
